@@ -1,0 +1,8 @@
+ 5
+ 10
+ 1 1 2 2 0
+ inf  inf    9   19  inf
+   9  inf  inf  inf  inf
+ inf   -2  inf  inf    8
+ inf   -2  inf  inf   -2
+ inf  inf  inf  inf  inf
