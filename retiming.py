@@ -86,12 +86,18 @@ class retime:
         self.Cg = np.hstack((self.Cg,exNode))
         self._Pr("Constrains graph", self.Cg)
 
-    def Retiming(self):
+    def Retiming_Cg(self):
         self.Result = self._ShortestPath(self.Cg)
+        self._Pr("Result", self.Result)
+
+    def Retiming(self):
+        self.Result = self._ShortestPath(self._g)
         self._Pr("Result", self.Result)
 
 if __name__ == "__main__" :
     app = retime("graph.txt")
-    app.Init()
-    app.CalTimeConstrain(2)
+    #app.Init()
+    #app.CalTimeConstrain(10)
+    #app.Retiming_Cg()
+    #app = retime("p2.txt")
     app.Retiming()
